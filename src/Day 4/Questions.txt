@@ -1,0 +1,9 @@
+Algorithm to Check if a Given Number is Prime
+ 
+Algorithm to Generate Fibonacci Series Until the Number 1000
+ 
+Write an algorithm to accept a number and return the reverse of the same. If the number ends with one or more zeros, then in the reversed number those zeros will not be present (since those zeros become leading zeros).
+ 
+Find the maximum element in an array: Given an array of integers, write a function to find the maximum element in the array.
+ 
+Find the first occurrence of an element in an array: Given an array of integers and an element, write a function to find the first occurrence of the element in the array. 

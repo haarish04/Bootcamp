@@ -1,0 +1,102 @@
+CREATE TABLE PERSONS(PID INT NOT NULL,LASTNAME VARCHAR(255) NOT NULL,FIRSTNAME VARCHAR(255),ADDRESS VARCHAR(255),CITY VARCHAR(255),CONSTRAINT PKPERSONID PRIMARY KEY(PID,LASTNAME));
+ 
+
+
+insert into customers values (1,'Peter','James','Torikatu 46','Oulu',90110);
+insert into customers values (2,'Wellington','Importadora','Ruo da marcado 12','Resende',8737);
+insert into customers values (3,'White','Markets','305 Ave suite','Resende',8737);
+insert into customers values (4,'Andrew','James','Torikatu 46','Oulu',90110);
+insert into customers values (5,'Torikara','James','Torikatu 46','Oulu',90110);
+insert into customers values (6,'Pranav','Kumar','Torikatu 46','Oulu',90110);
+insert into customers values (7,'Peter','Singh','Torikatu 46','Oulu',90110);
+
+
+
+insert into products(product_id,product_name,quantity_in_hand,reorder_quantity,reorder_level,price) 
+values(7,'soft silk carpets',300,600,700,5000);
+insert into products(product_id,product_name,quantity_in_hand,reorder_quantity,reorder_level,price) 
+values(8,'hard silk carpets',200,500,700,4000);
+insert into products(product_id,product_name,quantity_in_hand,reorder_quantity,reorder_level,price) 
+values(9,'soft silk mugs',300,600,700,6000);
+insert into products(product_id,product_name,quantity_in_hand,reorder_quantity,reorder_level,price) 
+values(6,'red silk carpets',300,400,800,5000);
+
+
+
+create table if not exists Customer_order(
+
+Order_id int not null,
+
+Product_id int not null,
+
+Customer_id int not null,
+
+Qty int not null,
+
+constraint fk1 FOREIGN KEY (Product_id)
+
+REFERENCES Products(Product_id),
+
+constraint fk2 FOREIGN KEY (Customer_id)
+
+REFERENCES Customers(Customer_id));
+ 
+
+CREATE TABLE IF NOT EXISTS CUSTOMERORDER(ORDERID INT NOT NULL,PRODUCTID INT NOT NULL,CUSTOMERID INT NOT NULL,QUANTITYORDERED INT NOT NULL,CONSTRAINT FK1 FOREIGN KEY(PRODUCTID) rEFERENCES PRODUCTS(PRODUCTID) ,CONSTRAINT FK2 FOREIGN KEY(CUSTOMERID) REFERENCES CUSTOMERS(CUSTOMERID));    
+
+
+CREATE TABLE employees (
+    emp_id INT PRIMARY KEY,
+    emp_name VARCHAR(50),
+    manager_id INT,
+    FOREIGN KEY (manager_id) REFERENCES employees(emp_id)
+);
+ 
+
+
+CREATE TABLE departments (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(50),
+    emp_id INT,
+    FOREIGN KEY (emp_id) REFERENCES employees(emp_id)
+);
+
+
+
+
+INSERT INTO employees (emp_id, emp_name, manager_id) VALUES 
+
+(1, 'Alice', NULL),
+
+(2, 'Bob', 1),
+
+(3, 'Charlie', 1),
+
+(4, 'Dave', 2);
+ 
+INSERT INTO departments (dept_id, dept_name, emp_id) VALUES 
+
+(1, 'HR', 1),
+
+(2, 'Engineering', 2),
+
+(3, 'Marketing', NULL),
+
+(4, 'Sales', NULL);
+
+ 
+
+select employees.emp_id, employees.emp_name, departments.dept_name from employees left join departments on employees.emp_id = departments.emp_id;
+ 
+select employees.emp_id, employees.emp_name, departments.dept_name from employees right join departments on employees.emp_id = departments.emp_id;
+ 
+select employees.emp_id, employees.emp_name, departments.dept_name from employees inner join departments on employees.emp_id = departments.emp_id;
+ 
+select e1.emp_id as employee_id, e1.emp_name as employee_name,e2.emp_name as manager_name from employees e1, employees e2 where e1.manager_id=e2.emp_id;
+ 
+select e1.emp_id as employee_id, e1.emp_name as employee_name,e2.emp_name as manager_name from employees e1 inner join employees e2 on e1.manager_id=e2.emp_id;
+ 
+create index idx_emp_name on employees(emp_name);
+ 
+create unique index idx_emp_name_dept on employees(emp_name, emp_id);
+ 
