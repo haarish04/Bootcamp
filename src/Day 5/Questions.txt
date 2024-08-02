@@ -77,4 +77,62 @@ Participant with ID 1005 does not exist
 Enter ID to search
 0
 Program terminated
- 
+
+ Kaprekar number
+Consider an n-digit number k. Square it and add the right n digits to the left n or n-1 digits. If
+the resultant sum is k, then k is called a Kaprekar number.
+For example, 9 is a Kaprekar number since
+92 = 81
+& 8+1=9.
+297 is a Kaprekar number since
+2972 = 88209
+& 88+209 = 297.
+Write a program to find whether a given number is a Kaprekar number or not.
+
+Input Format:
+Input consists of a single integer.
+Output Format:
+Refer sample output for details.
+
+Sample Input 1:
+9
+Sample Output 1:
+Kaprekar Number
+
+Sample Input 2:
+101
+Sample Output 2:
+Not A Kaprekar Number
+
+Constructor Overloading Assignment
+
+Create a class named Product with the following private instance variables
+ productCode of type String
+ productName of type String
+ productPrice of type double
+ categoryCode of type char (E- electronics, A - apparels, T – toys)
+
+Include a private static variable prodCounter of type int initialized to 100.
+Create getters and setters for all variables
+
+Create a private method generateProductCode which will return the product code as String.
+Product code is derived by concatenating categoryCode and incremented product counter.
+
+Include a parameterized constructor with 3 parameters ( productName, productPrice,
+categoryCode). prodCode should be assigned in constructor by using generateProductCode
+method. Initialize all the member variables.
+
+Include an overloaded parameterized constructor with 2 parameter( productName, productPrice).
+prodCode should be assigned in constructor by using generateProductCode method. Category
+code should be assigned to ‘E’. Initialize all the member variables.
+
+Include a method getProductDetails to format the product details. This method should return a
+String containing the product details in the below format
+
+Product : Code – 101, Name – Laptop, price - 45000.00, Category – E
+
+Create class TestProduct with a main method to test above class
+ Create an object using the parameterized constructor with 3 parameters
+ Get the product details by invoking getProductDetails and display the details
+ Create another object using the parameterized constructor with 2 parameters
+ Get the product details by invoking getProductDetails and display the details
