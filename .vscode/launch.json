@@ -1,56 +1,77 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Fibonacci",
-            "request": "launch",
-            "mainClass": "Fibonacci",
-            "projectName": "Bootcamp_1324406"
-        },
-        {
-            "type": "java",
-            "name": "FirstOccurence",
-            "request": "launch",
-            "mainClass": "FirstOccurence",
-            "projectName": "Bootcamp_1324406"
-        },
-        {
-            "type": "java",
-            "name": "MaxElement",
-            "request": "launch",
-            "mainClass": "MaxElement",
-            "projectName": "Bootcamp_1324406"
-        },
-        {
-            "type": "java",
-            "name": "PrimeNumbers",
-            "request": "launch",
-            "mainClass": "PrimeNumbers",
-            "projectName": "Bootcamp_1324406"
-        },
-        {
-            "type": "java",
-            "name": "ReverseNum",
-            "request": "launch",
-            "mainClass": "ReverseNum",
-            "projectName": "Bootcamp_1324406"
-        },
-        {
-            "type": "java",
-            "name": "day3algo1",
-            "request": "launch",
-            "mainClass": "day3algo1",
-            "projectName": "Bootcamp_1324406"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "AverageOfMarks",
+      "request": "launch",
+      "mainClass": "AverageOfMarks",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
+      "name": "welcome",
+      "request": "launch",
+      "mainClass": "welcome",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
+      "name": "CommandLineDemo",
+      "request": "launch",
+      "mainClass": "CommandLineDemo",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Fibonacci",
+      "request": "launch",
+      "mainClass": "Fibonacci",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
+      "name": "FirstOccurence",
+      "request": "launch",
+      "mainClass": "FirstOccurence",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
+      "name": "MaxElement",
+      "request": "launch",
+      "mainClass": "MaxElement",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
+      "name": "PrimeNumbers",
+      "request": "launch",
+      "mainClass": "PrimeNumbers",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
+      "name": "ReverseNum",
+      "request": "launch",
+      "mainClass": "ReverseNum",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
+      "name": "day3algo1",
+      "request": "launch",
+      "mainClass": "day3algo1",
+      "projectName": "Bootcamp_1324406"
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class day3algo1{
+class AverageOfMarks{
     public static void main(String args[]){
         System.out.println("Enter the number of participants: ");
         Scanner sc= new Scanner(System.in);
