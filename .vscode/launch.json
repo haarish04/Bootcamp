@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "cricket",
+      "request": "launch",
+      "mainClass": "cricket",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
+      "name": "specialSequence",
+      "request": "launch",
+      "mainClass": "specialSequence",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "AverageOfMarks",
       "request": "launch",
       "mainClass": "AverageOfMarks",
