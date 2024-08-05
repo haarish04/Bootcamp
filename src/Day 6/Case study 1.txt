@@ -1,0 +1,36 @@
+Case Study: Telecom Service Management
+You are required to design a telecom service management system. This system should manage different types of telecom services, such as prepaid and postpaid plans, using object-oriented programming concepts. Implement the following requirements:
+
+1. Abstract Class: TelecomService
+- Define an abstract class named TelecomService with the following private instance variables:
+- serviceName (String)
+- serviceCost (double)
+- serviceDuration (int) - in days
+- Include a parameterized constructor to initialize these fields.
+- Include abstract methods:
+- calculateTotalCost(): Calculate the total cost of the service based on the duration and any additional charges.
+- getServiceDetails(): Return the details of the service.
+- Include a concrete method applyDiscount(double discountPercentage) to reduce the serviceCost by the given discount percentage.
+
+2. Interface: Renewable
+- Define an interface Renewable with the following method:
+- renewService(int additionalDays): Adds the given number of days to the service duration.
+
+3. Concrete Classes:
+Class PrepaidService:
+- Extend TelecomService and implement the Renewable interface.
+- Include a private instance variable dataBalance (in GB).
+- Implement the calculateTotalCost() method, where the total cost is the serviceCost multiplied by the serviceDuration. If the dataBalance falls below 1 GB, a surcharge of $10 is added.
+- Implement the getServiceDetails() method to return a string with service details including data balance.
+- Implement the renewService(int additionalDays) method to extend the service duration.
+
+Class PostpaidService:
+- Extend TelecomService and implement the Renewable interface.
+- Include a private instance variable monthlyLimit (in GB).
+- Implement the calculateTotalCost() method, where the total cost is the serviceCost plus an additional $20 if the usage exceeds monthlyLimit.
+- Implement the getServiceDetails() method to return a string with service details including monthly limit.
+- Implement the renewService(int additionalDays) method to extend the service duration.
+
+4. Test Class:
+- Create a TestTelecomService class with a main method to test the functionality of both PrepaidService and PostpaidService.
+- Create objects for both classes, calculate the total cost, apply a discount, renew the service, and display the service details before and after renewal.

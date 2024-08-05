@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TestTelecomService",
+      "request": "launch",
+      "mainClass": "TestTelecomService",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "TestCard",
       "request": "launch",
       "mainClass": "TestCard",
