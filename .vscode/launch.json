@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AbstractDemo",
+      "request": "launch",
+      "mainClass": "AbstractDemo",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "Kaprekar",
       "request": "launch",
       "mainClass": "Kaprekar",
