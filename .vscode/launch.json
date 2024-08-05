@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TestCard",
+      "request": "launch",
+      "mainClass": "TestCard",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "AbstractDemo",
       "request": "launch",
       "mainClass": "AbstractDemo",

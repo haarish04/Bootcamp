@@ -1,0 +1,22 @@
+Create abstract class PrepaidCard as per the below details
+ Has attributes cardNo - int, availableBalance - double, swipeLimit - double
+ Abstract method swipeCard which takes amount as input and returns a boolean.
+ Override toString to get object details in a formatted way
+ Concrete method rechargeCard which takes amount as input and adds it to availableBalance
+
+Create TravelCard as per below details
+ subclass of PrepaidCard
+ Has attribute rewardPoints.
+
+The swiped amount should not be more than the swipeLimit or the available balance for
+Travel Card.
+Travel Cards are used in USA(1$ = Rs 60).
+
+When TravelCard is swiped, the swiped amount in dollars is converted in to INR and
+deducted from the available balance. Processing charge of 5% of amount is charged for
+every swipe and is reduced from the balance.
+5 Reward points are given for every 100 INR swiped and added to the instance variable
+rewardPoints.
+
+Create a TestCard class. Create objects of TravelCard. Use the travel card by swiping and
+display the Card details.
