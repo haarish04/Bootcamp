@@ -12,9 +12,18 @@ You are required to design a telecom service management system. This system shou
 - getServiceDetails(): Return the details of the service.
 - Include a concrete method applyDiscount(double discountPercentage) to reduce the serviceCost by the given discount percentage.
 
+-----------------------------------------------
+If the discount percentage is negative or greater than 100, throw an InvalidDiscountException.
+Validate the serviceDuration in the constructor. If the duration is negative, throw an InvalidServiceDurationException.
+-----------------------------------------------
+
 2. Interface: Renewable
 - Define an interface Renewable with the following method:
 - renewService(int additionalDays): Adds the given number of days to the service duration.
+
+-------------------------------------------------
+If the additionalDays is negative, throw an InvalidServiceDurationException.
+-------------------------------------------------
 
 3. Concrete Classes:
 Class PrepaidService:
@@ -30,6 +39,12 @@ Class PostpaidService:
 - Implement the calculateTotalCost() method, where the total cost is the serviceCost plus an additional $20 if the usage exceeds monthlyLimit.
 - Implement the getServiceDetails() method to return a string with service details including monthly limit.
 - Implement the renewService(int additionalDays) method to extend the service duration.
+
+-------------------------------------------------------------
+ Custom Exceptions:
+•	InvalidServiceDurationException: Thrown when a service duration or renewal duration is negative.
+•	InvalidDiscountException: Thrown when an invalid discount percentage (negative or greater than 100) is provided.
+-------------------------------------------------------------
 
 4. Test Class:
 - Create a TestTelecomService class with a main method to test the functionality of both PrepaidService and PostpaidService.

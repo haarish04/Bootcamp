@@ -1,3 +1,15 @@
+class InvalidDiscountException extends Exception{
+    public InvalidDiscountException(){
+        super("Invalid discount applied");
+    }
+}
+
+class InvalidServiceDurationException extends Exception{
+    public InvalidServiceDurationException(){
+        super("Invalid duration");
+    }
+}
+
 abstract class TelecomService {
     private String serviceName;
     private double serviceCost;
@@ -6,13 +18,24 @@ abstract class TelecomService {
     public TelecomService(String serviceName, double serviceCost, int serviceDuration){
         this.serviceName= serviceName;
         this.serviceCost= serviceCost;
-        this.serviceDuration= serviceDuration;
+        try{
+            if(serviceDuration<0)
+                throw new InvalidServiceDurationException();
+        } catch(Exception e){
+            System.err.println(e.getMessage());
+        }
     }
 
     public abstract double calculateTotalCost();
     public abstract String getServiceDetails();
 
     public void applyDiscount(double discountPercentage){
+        try{
+            if(discountPercentage<0 || discountPercentage >100)
+                throw new InvalidDiscountException();
+        } catch(Exception e){
+            System.err.println(e.getMessage());
+        }
         this.serviceCost-= this.serviceCost *discountPercentage/100;
     }
     public String getServiceName() {
@@ -68,7 +91,14 @@ class PrepaidService extends TelecomService implements Renewable {
 
     
     public void renewService(int additionalDays) {
-        setServiceDuration(getServiceDuration()+ additionalDays);
+        try{
+            if (additionalDays<0)
+                throw new InvalidServiceDurationException();
+            setServiceDuration(getServiceDuration()+ additionalDays);
+
+        } catch (Exception e){
+            System.err.println(e.getMessage());
+        }
     }
 }
 
