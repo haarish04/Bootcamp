@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MyException",
+      "request": "launch",
+      "mainClass": "MyException",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
+      "name": "ExceptionDemo",
+      "request": "launch",
+      "mainClass": "ExceptionDemo",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "TestTelecomService",
       "request": "launch",
       "mainClass": "TestTelecomService",
