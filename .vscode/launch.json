@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TestPatientList",
+      "request": "launch",
+      "mainClass": "TestPatientList",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "CustomComparator",
       "request": "launch",
       "mainClass": "CustomComparator",

@@ -46,3 +46,18 @@ Runs Scored : 1-20 2-30 3-150 4-50 6-2
 Runrate : 5.04
 Lowest Runs : 2
 Count of player who batted: 5
+
+--------------------------------------------------------------------------
+Assignment 4 – Patient List - Comparable and Comparator
+ 
+Create a class Patient with private instance variables patientId (int), name(String) and age(int).
+Include parameterized Constructor and Getters/Setters
+Create a class TestPatientList with a main method.
+ Create 3 objects of patient and add to an ArrayList
+ Sort the List based on Name which should be the natural order and display using for each
+loop
+ Sort the List based on age which should be the alternate sorting order and display using
+Iterator
+ Add all the objects in to a TreeSet and display the TreeSet
+ Create a static method getPatientAge which accepts name of the patient and TreeSet of
+patient. Method should return the age of patient. Invoke this method in the main method.

@@ -24,7 +24,7 @@ public class CustomComparator {
         
         System.out.println("After sorting: ");
 
-        for(Customer cust: customerList)
+        for(Customer cust: customerList)    
             System.out.println(cust.getName());
     
 
