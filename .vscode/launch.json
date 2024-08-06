@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StudentMarks",
+      "request": "launch",
+      "mainClass": "StudentMarks",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "ArrayListDemo",
       "request": "launch",
       "mainClass": "ArrayListDemo",
