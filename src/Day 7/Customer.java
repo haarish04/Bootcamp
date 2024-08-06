@@ -1,10 +1,10 @@
-class Customer implements Comparable<Customer>{
+class NewCustomer implements Comparable<NewCustomer>{
 	private static int count;
 	private int customerId;
 	private String name;
 	private String location;
 	private String email;
-	public Customer(int customerId, String name, String location, String email) {
+	public NewCustomer(int customerId, String name, String location, String email) {
 		super();
 		this.customerId = customerId;
 		this.name = name;
@@ -40,7 +40,7 @@ class Customer implements Comparable<Customer>{
 	}
 	
 	@Override
-	public int compareTo(Customer customer) {
+	public int compareTo(NewCustomer customer) {
 		return this.name.compareTo(customer.getName());
 	}
 	
