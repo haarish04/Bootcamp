@@ -49,3 +49,22 @@ Class PostpaidService:
 4. Test Class:
 - Create a TestTelecomService class with a main method to test the functionality of both PrepaidService and PostpaidService.
 - Create objects for both classes, calculate the total cost, apply a discount, renew the service, and display the service details before and after renewal.
+
+-------------------------------------------------------------
+
+Add following class in Telecom Service Management Case Study :-
+Class TelecomCustomer:
+•	Define a class TelecomCustomer with the following instance variables:
+o	customerName (String)
+o	customerID (String)
+o	services (List<TelecomService>) - Use a List to manage multiple TelecomService objects associated with the customer. 
+•	Include a method addService(TelecomService service) to add a service to the customer's list of services.
+•	Include a method calculateTotalCost() to calculate the total cost of all services associated with the customer by iterating over the list of services.
+•	Include a method getCustomerDetails() to return a string containing the customer's details and all associated services by iterating over the list of services.
+
+In Test Class :-
+Create a TestTelecomService class with a main method to test the functionality of both PrepaidService and PostpaidService.
+Use try-catch blocks to handle exceptions while creating objects, applying discounts, and renewing services.
+Create a Customer object and add multiple TelecomService objects to it.
+Calculate and display the total cost of all services, and renew and apply discounts where applicable.
+
