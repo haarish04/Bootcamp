@@ -14,7 +14,15 @@ public class ArrayListDemo {
             System.out.println(fruit.toUpperCase().substring(0,3));
         }
 
+        Iterator<String> itr= fruits.iterator();
 
+        while(itr.hasNext())
+            System.out.println(itr.next());
+
+        
+         ListIterator<String> listItr = fruits.listIterator();   
+         while(listItr.hasNext())
+            System.out.println(listItr.next());
     }
     
 }   
