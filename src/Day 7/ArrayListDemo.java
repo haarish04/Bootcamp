@@ -23,6 +23,18 @@ public class ArrayListDemo {
          ListIterator<String> listItr = fruits.listIterator();   
          while(listItr.hasNext())
             System.out.println(listItr.next());
+
+        ArrayList<String> berryFruits= new ArrayList<>();
+        berryFruits.add("strawberry");
+        berryFruits.add("raspberry");
+        berryFruits.add("cranberry");
+
+        fruits.addAll(berryFruits);
+
+        fruits.retainAll(berryFruits);
+        fruits.remove("raspberry");
+
+        System.out.println(fruits);
     }
     
 }   
