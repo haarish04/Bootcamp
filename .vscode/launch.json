@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CustomComparator",
+      "request": "launch",
+      "mainClass": "CustomComparator",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "TestScoreAnalyzer",
       "request": "launch",
       "mainClass": "TestScoreAnalyzer",

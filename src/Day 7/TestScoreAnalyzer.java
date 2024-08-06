@@ -13,7 +13,7 @@ public class TestScoreAnalyzer {
                 int runs = Integer.parseInt(line);
                 analyze.addRunsToList(runs);
             } catch (Exception e) {
-                System.out.println(e.getMessage());
+                System.out.println("Invalid input");
             }
         }
 
