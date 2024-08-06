@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ArrayListDemo",
+      "request": "launch",
+      "mainClass": "ArrayListDemo",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "MyException",
       "request": "launch",
       "mainClass": "MyException",
