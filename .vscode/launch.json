@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "EmployeeStreamDemo",
+      "request": "launch",
+      "mainClass": "EmployeeStreamDemo",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "StreamAPIDemo",
       "request": "launch",
       "mainClass": "StreamAPIDemo",

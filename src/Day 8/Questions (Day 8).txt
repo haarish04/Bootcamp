@@ -11,3 +11,7 @@ Write a Java program to track the usage of different telecom services by custome
 -------------------------------------------------------------------
 
 Note: Functional interface can have only one abstract nethod
+
+-------------------------------------------------------------------
+
+Use filter and map functions using stream for Employee class with bunch of private variables 

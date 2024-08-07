@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 public class StreamAPIDemo {
     public static void main(String[] args) {
 
@@ -39,8 +40,14 @@ public class StreamAPIDemo {
         System.out.println(numbers.stream().filter(num -> num>30 && num< 60).toList());
         Object[] numList = numbers.stream().filter(num -> num>30 && num< 60).toArray();
         System.out.println(Arrays.toString(numList));
+        
+        //Use collect for the same thing
+        List<Integer> numList2 =numbers.stream().filter(num -> num > 30 && num < 60).collect(Collectors.toList());
+        System.out.println(numList2);
 
-        //List<Integer> numList2 =numbers.stream().filter(num -> num > 30 && num < 60).collect(Collectors.toList());
+        //Map every element to twice of its value only if above 20
+        numbers.stream().filter(num -> num> 20).map(num -> num *2).forEach(num -> System.out.println(num));
+        
 
     }
     
