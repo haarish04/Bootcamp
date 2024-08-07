@@ -13,6 +13,11 @@ interface RectangleCalc{
     void area(int length, int breadth);
 }
 
+@FunctionalInterface
+interface Series{
+    void printSeries(int start, int end);
+}
+
 public class LambdaDemo {
     public static void main(String[] args) {
         AreaCalc m = (int num) -> {System.out.println(num*num);};
@@ -23,11 +28,18 @@ public class LambdaDemo {
 
         m.area(5);
 
-        SumCalc s = num -> {return (num+num);};
-        System.out.println(s.sum(6));
+        SumCalc sumC = num -> {return (num+num);};
+        System.out.println(sumC.sum(6));
 
         RectangleCalc r = (int l, int b) -> {System.out.println(l*b);};
         r.area(10,20);
+
+        Series s =(int start, int end) -> {
+            for(int i=start;i<end;i++)
+                System.out.println(i);
+        };
+
+        s.printSeries(2, 7);
         
     }
     
