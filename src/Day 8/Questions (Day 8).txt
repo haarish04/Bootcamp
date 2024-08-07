@@ -1,0 +1,9 @@
+Telecom Billing System - Customer Usage Tracker
+Write a Java program to track the usage of different telecom services by customers using a Map.
+
+1. Create a Map where the key is the customer ID (String) and the value is another Map that tracks the service type (String) and the corresponding usage (Integer).
+2. Implement methods to:
+   - Add or update a customer's usage for a specific service.
+   - Retrieve the total usage for a customer across all services.
+   - Get a report of all customers and their service usage.
+3. Ensure that your program handles edge cases like customers without any usage or services without usage.

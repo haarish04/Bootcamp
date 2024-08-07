@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TestTelecomBilling",
+      "request": "launch",
+      "mainClass": "TestTelecomBilling",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "CustomerMap",
       "request": "launch",
       "mainClass": "CustomerMap",
