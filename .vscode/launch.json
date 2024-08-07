@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CustomerMap",
+      "request": "launch",
+      "mainClass": "CustomerMap",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
+      "name": "HashmapDemo",
+      "request": "launch",
+      "mainClass": "HashmapDemo",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "TestPatientList",
       "request": "launch",
       "mainClass": "TestPatientList",
