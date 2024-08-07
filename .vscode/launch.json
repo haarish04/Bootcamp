@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StreamAPIDemo",
+      "request": "launch",
+      "mainClass": "StreamAPIDemo",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "LambdaDemo",
       "request": "launch",
       "mainClass": "LambdaDemo",
