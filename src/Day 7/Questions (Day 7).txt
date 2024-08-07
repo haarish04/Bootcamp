@@ -61,3 +61,7 @@ Iterator
  Add all the objects in to a TreeSet and display the TreeSet
  Create a static method getPatientAge which accepts name of the patient and TreeSet of
 patient. Method should return the age of patient. Invoke this method in the main method.
+
+--------------------------------------------------------------------------
+
+Store customer details in a treeMap and print all the details of customer who belongs to bangalore
