@@ -1,3 +1,4 @@
+import java.util.*;
 class InvalidDiscountException extends Exception{
     public InvalidDiscountException(){
         super("Invalid discount applied");
@@ -125,4 +126,10 @@ class PostpaidService extends TelecomService implements Renewable {
     public void renewService(int additionalDays) {
         setServiceDuration(getServiceDuration()+additionalDays);
     }
+}
+
+class TelecomCustomer {
+    private String customerName;
+    private String customerID;
+    private ArrayList<TelecomService> services;
 }
