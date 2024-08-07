@@ -1,19 +1,26 @@
 @FunctionalInterface
-interface math{
+interface AreaCalc{
     void area(int length);
+}
+
+@FunctionalInterface
+interface SumCalc{
+    int sum(int num);
 }
 
 public class LambdaDemo {
     public static void main(String[] args) {
-        math m1 = (int num) -> {System.out.println(num*num);};
-        math m2 = (num) -> {System.out.println(num*num);};
-        math m3 = (num) -> System.out.println(num*num);
-        math m4 = num -> System.out.println(num*num);
+        AreaCalc m = (int num) -> {System.out.println(num*num);};
+        //math m2 = (num) -> {System.out.println(num*num);};
+        //math m3 = (num) -> System.out.println(num*num);
+        //AreaCalc m4 = num -> System.out.println(num*num);
+        //All 4 ways are correct
 
-        m1.area(5);
-        m2.area(10);
-        m3.area(7);
-        m4.area(9);
+        m.area(5);
+
+        SumCalc s = num -> {return (num+num);};
+        System.out.println(s.sum(6));
+        
     }
     
 }
