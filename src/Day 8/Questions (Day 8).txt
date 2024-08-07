@@ -7,3 +7,7 @@ Write a Java program to track the usage of different telecom services by custome
    - Retrieve the total usage for a customer across all services.
    - Get a report of all customers and their service usage.
 3. Ensure that your program handles edge cases like customers without any usage or services without usage.
+
+-------------------------------------------------------------------
+
+Note: Functional interface can have only one abstract nethod
