@@ -16,10 +16,32 @@ public class StreamAPIDemo {
         Optional<Integer> res =numbers.stream().reduce((num1, num2) ->(num1 +num2));
 
         //Use orElse to accept null and modify it to some other value of our choice
-        int res2 =numbers.stream().reduce((num1, num2) ->(num1 +num2)).orElse(0);
+        int res2 =numbers.stream().reduce( (num1, num2) ->(num1 +num2)).orElse(0);
+
+        //Paasing 100 initial value to the sum
+        int res3 =numbers.stream().reduce(100, (num1, num2) ->(num1 +num2));
+
+        //Filter elements and print only those that are greter than 10
+        numbers.stream().filter(num -> num>20).forEach(num -> System.out.println(num));
+
+        //Filter elements such that 30 < num < 60
+        numbers.stream().filter(num -> num>30 && num< 60).forEach(num -> System.out.println(num));
+
+        //Count of the numbers from above question
+        long numCount=numbers.stream().filter(num -> num>30 && num< 60).count();
+
 
         System.out.println(res.get());
         System.out.println(res2);
+        System.out.println(res3);
+        System.out.println(numCount);
+
+        System.out.println(numbers.stream().filter(num -> num>30 && num< 60).toList());
+        Object[] numList = numbers.stream().filter(num -> num>30 && num< 60).toArray();
+        System.out.println(Arrays.toString(numList));
+
+        //List<Integer> numList2 =numbers.stream().filter(num -> num > 30 && num < 60).collect(Collectors.toList());
+
     }
     
 }
