@@ -1,1 +1,3 @@
 Explore all 4 types of method reference
+
+Explore functions in java
