@@ -11,12 +11,20 @@ public class EmployeeStreamDemo {
 
         empList.stream().forEach(emp -> System.out.println(emp));
 
+        System.out.println("Number of employees: ");
+        System.out.println(empList.stream().count());
+        
+        System.out.println("Total Salary: ");
         System.out.println(empList.stream().map(Employee :: getSalary).reduce((num1,num2)-> (num1 + num2)).get());
+
+        System.out.println("Total Salary of all SDEs: ");
         System.out.println(empList.stream().filter(emp -> "SDE".equals(emp.getRole())).map(Employee :: getSalary).reduce(Double::sum).get());
+        
+        System.out.println("Dudes earning more than 400:");
+        empList.stream().filter(emp -> emp.getSalary() > 400).forEach(System.out::println);
 
-
-
-
+        System.out.println("Employee earning maximum salary: ");
+        System.out.println(empList.stream().map(Employee ::getSalary).reduce((num1,num2)-> (num1 > num2 ? num1 : num2)).get());
 
 
     }

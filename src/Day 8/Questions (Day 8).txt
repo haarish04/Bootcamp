@@ -15,8 +15,8 @@ Note: Functional interface can have only one abstract nethod
 -------------------------------------------------------------------
 
 Use filter and map functions using stream for Employee class with bunch of private variables 
-      //Calculate total salary
+      // Calculate total salary
 		// Calculate total salary of all the developers
-		// Display those employees details who are getting salary more than 50000
+		// Display those employees details who are getting salary more than 400
 		// Display details of employee who is getting maximum salary
 		
