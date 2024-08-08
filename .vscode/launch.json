@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "FunctionComposition",
+      "request": "launch",
+      "mainClass": "FunctionComposition",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "MethodReferenceDemo",
       "request": "launch",
       "mainClass": "MethodReferenceDemo",
