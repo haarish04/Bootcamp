@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MethodReferenceDemo",
+      "request": "launch",
+      "mainClass": "MethodReferenceDemo",
+      "projectName": "Bootcamp_1324406"
+    },
+    {
+      "type": "java",
       "name": "EmployeeStreamDemo",
       "request": "launch",
       "mainClass": "EmployeeStreamDemo",
