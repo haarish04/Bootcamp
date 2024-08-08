@@ -26,6 +26,8 @@ public class CustomComparator {
 
         for(NewCustomer cust: NewCustomerList)    
             System.out.println(cust.getName());
+
+        Collections.sort(NewCustomerList,(NewCustomer nc1, NewCustomer nc2)->nc1.getName().compareTo(nc2.getName()));
     
 
 
