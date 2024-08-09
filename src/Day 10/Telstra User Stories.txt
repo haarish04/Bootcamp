@@ -1,0 +1,39 @@
+As a customer, I want to be able to purchase a phone and plan in-store without needing an appointment, so that I can enjoy a seamless and efficient shopping experience.
+
+As a sales consultant, I want to have a clear understanding of the products and services offered, including their price and value, so that I can effectively communicate with customers and meet their needs.
+
+As a customer, I want to receive personalized recommendations for travel and local events from store employees, so that I feel valued and supported in my new city.
+
+As a retail employee, I want to be able to recognize and respect the cultural diversity of customers, so that I can provide a welcoming and inclusive environment.
+
+As a customer, I want to be able to provide feedback on my store experience through a survey, so that the service can be improved for future visits.
+
+As a store manager, I want to receive customer feedback directly, so that I can address any issues promptly and maintain a high standard of customer service.
+
+As a customer, I want to have access to add-on services and accessories at the point of sale, so that I can enhance my product without needing to visit multiple stores.
+
+---------------------------------------------------------------------------------------------------------
+
+As an IT manager, I want to implement a robust cybersecurity solution for my company, so that we can protect our data and operations from cyber threats.
+
+As a business owner, I want to utilize cloud services to enhance our operational efficiency and scalability, so that we can focus on growth without worrying about IT infrastructure.
+
+As a project manager, I want to access real-time geospatial data for our urban planning projects, so that we can make informed decisions and optimize our development plans.
+
+As a financial services provider, I want to modernize our customer experience with seamless integration and future-ready solutions, so that we can stay competitive and meet our customers’ evolving needs.
+
+As a regional council member, I want to improve our communication and resilience through reliable network solutions, so that we can better serve our community.
+
+As a venue operator, I want to offer dedicated 4G/5G connectivity to our patrons, so that they can enjoy uninterrupted service during events.
+
+As a housing association, I want to prioritize digital transformation with a human-centered design, so that we can enhance both staff and client experiences while boosting operational efficiency.
+
+---------------------------------------------------------------------------------
+
+As a logistics company, we want to implement IoT tracking for our fleet, so that we can monitor delivery statistics and improve our supply chain efficiency.
+As a city planner, we want to utilize IoT for real-time geospatial data, so that we can enhance urban development and infrastructure planning.
+As a utility provider, we want to deploy IoT solutions for water networks, so that we can efficiently plan maintenance and control performance, leading to better resource management.
+As a venue operator, we want to integrate IoT connectivity solutions, so that we can offer enhanced experiences for patrons during events with dedicated 4G/5G networks.
+As a business owner, we want to leverage IoT for environmental monitoring of large or remote sites, so that we can manage these areas effectively from anywhere.
+As a security firm, we want to use IoT for electronic security solutions, so that we can provide powerful insights for safety and loss prevention, while also enhancing business outcomes.
+As a transport authority, we want to partner with Telstra for a smart transport solution, so that we can modernize our services and provide a better experience for commuters.
